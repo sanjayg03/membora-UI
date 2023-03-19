@@ -1,0 +1,164 @@
+<div class="header header-sticky">
+  <div class="mem-logo">
+    <div class="memWrapper">
+      <img class="mem-logo-style" src="../../../assets/logos/mem-logo-black.png">
+      <div class="mem-title">
+        <p>Membora</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="admin">
+    <div class="admin-name">
+      <p>Hi, {{fnln?.firstName + " " + fnln?.lastName}}</p>
+    </div>
+    <div class="admin-pf">
+      <button type="button" class="btn-popover" [ngbPopover]="popContent" placement="bottom">
+        <img class="admin-logo" src="../../../assets/logos/mem-logo-black.png">
+      </button>
+      <ng-template #popContent>
+        <div class="p1-hover" (click)="openEnd(contentP)">
+          <p>
+            <i class="fal fa-user"></i> &nbsp;&nbsp;<span class="popContent-P1">Profile</span>
+          </p>
+        </div>
+
+        <div class="p2-hover">
+          <p>
+            <i class="fal fa-unlock-alt"></i> &nbsp;&nbsp;<span class="popContent-P2">Change password</span>
+          </p>
+        </div>
+
+        <hr>
+        <div class="p3-hover">
+          <p (click)="logOutSucess()">
+            <i class="fal fa-power-off"></i> &nbsp;&nbsp;<span class="popContent-P3">Log out</span>
+          </p>
+        </div>
+      </ng-template>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- pop up for profile view  -->
+<ng-template #contentP let-offcanvas>
+  <div class="offcanvas-header">
+    <h4 class="offcanvas-title">My Profile</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
+  </div>
+
+  <div class="offcanvas-body">
+
+    <form [formGroup]="profileForm">
+
+      <div class="row">
+        <div class="col-md-12">
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="mb-10">First Name</label>
+            <p class="user-flex">
+              <span class="material-symbols-outlined user-style">
+                person
+              </span>
+              <input type="text" class="form-control-pv" placeholder="First name" name="firstName"
+                formControlName="firstName" />
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="mb-10">Last Name</label>
+            <p class="user-flex">
+              <span class="material-symbols-outlined user-style">
+                person
+              </span>
+              <input type="text" class="form-control-pv" placeholder="Last name" name="lastName"
+                formControlName="lastName" />
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="mb-10">Email Address</label>
+            <p class="user-flex">
+              <span class="material-symbols-outlined user-style">
+                mail
+              </span>
+              <input type="email" class="form-control-pv" placeholder="Email address" name="emailId"
+                formControlName="emailId" readonly />
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="mb-10">Phone Number</label>
+            <p class="user-flex"><span class="material-symbols-outlined user-style">
+                call
+              </span>
+              <input type="text" class="form-control-pv" placeholder="Phone number" name="phoneNumber" maxlength="10"
+                formControlName="phoneNumber" />
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-4">
+          <label class="mb-10">Date of Birth</label>
+          <p class="user-flex">
+            <span class="material-symbols-outlined user-style">
+              calendar_month
+            </span>
+            <input type="date" class="form-control-pv" placeholder="DD-MM-YYY" name="dateOfBirth"
+              formControlName="dateOfBirth" />
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <label class="mb-10">Business Name</label>
+          <p class="user-flex">
+            <span class="material-symbols-outlined user-style">
+              corporate_fare
+            </span>
+            <input type="text" class="form-control-pv" placeholder="Business name" name="businessName"
+              formControlName="businessName" />
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <label class="mb-10">Business Type</label>
+          <p class="user-flex">
+            <span class="material-symbols-outlined user-style">
+              card_travel
+            </span>
+            <input type="text" class="form-control-pv" placeholder="Business type" name="businessType"
+              formControlName="businessType" />
+          </p>
+        </div>
+
+      </div>
+
+    </form>
+
+    <br>
+    <br>
+    <div class="text-end">
+      <button type="button" class="btn btn-outline-primary" (click)="updateProfile()">Update</button>
+
+    </div>
+  </div>
+</ng-template>

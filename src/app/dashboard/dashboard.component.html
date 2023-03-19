@@ -1,0 +1,120 @@
+<div class="container ">
+  <div class="countBox">
+    <div class="box-1">
+      <p class="box-p">{{customerData?.length}}</p>
+      <p class="box-p-color-total">Total</p>
+    </div>
+    <div class="box-2">
+      <p class="box-p">22</p>
+      <p class="box-p-color-pending">Pending</p>
+    </div>
+    <div class="box-3">
+      <p class="box-p">32</p>
+      <p class="box-p-color-paid">Paid</p>
+    </div>
+
+    <div class="cust-creation">
+      <button class="btn-style-cc" (click)="open(content)"> Create Customer &nbsp;
+        <small><i class="fal fa-plus"></i></small></button>
+    </div>
+
+  </div>
+
+  <h5 class="table-header">Customer Details</h5>
+
+  <div class="cust-table">
+    <table>
+      <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Email Address</th>
+        <th>Phone No</th>
+        <th>Date of Birth</th>
+        <th>Subscription Date</th>
+        <!-- <th>Reminder</th> -->
+      </tr>
+      <tr *ngFor="let cus of customerData; let i = index">
+        <td>{{i +1}}</td>
+        <td>{{cus.firstName + ' ' + cus.lastName}}</td>
+        <td>{{cus.email}}</td>
+        <td>{{cus.phoneNumber}}</td>
+        <td>{{cus.dateOfBirth | date: 'dd-MM-YYYY'}}</td>
+        <td>{{cus.joiningDate | date: 'dd-MM-YYYY'}}</td>
+        <!-- <td><input type="radio" value="on" name="remider" id="on" /> ON <br>
+        <input type="radio" value="off" name="remider" id="off" /> OFF
+      </td> -->
+      </tr>
+
+    </table>
+  </div>
+
+  <!-- Modal -->
+  <ng-template #content>
+    <div class="modal-header">
+      <h5 class="modal-title" id="modal-basic-title">Create Customer</h5>
+      <button type="button" class="btn-close" aria-label="Close" (click)="closeModal(content)"></button>
+    </div>
+    <form [formGroup]="customerForm">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="First name" name="firstName"
+                formControlName="firstName" />
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Last name" name="lastName"
+                formControlName="lastName" />
+            </div>
+          </div>
+
+          <br><br>
+
+          <div class="row">
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Email address" name="email"
+                formControlName="email" />
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Phone number" name="phoneNumber" maxlength="10"
+                formControlName="phoneNumber" />
+            </div>
+          </div>
+
+          <br><br>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label>Date of Birth</label>
+              <input type="date" class="form-control" placeholder="DD-MM-YYY" name="dateOfBirth"
+                formControlName="dateOfBirth" />
+            </div>
+            <div class="col-md-6">
+              <label>Subscription Date</label>
+              <input type="date" class="form-control" placeholder="Subscription Date" name="joiningDate"
+                formControlName="joiningDate" />
+            </div>
+          </div>
+
+          <!-- <div class="row">
+            <div class="col-md-12">
+          <input type="checkbox" value="on" name="reminder" id="on" /> ON
+
+          <br>
+          <input type="checkbox" value="off" name=reminder id="off" /> OFF
+        </div>
+      </div> -->
+
+          <!-- <br><br> -->
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" (click)="createCustomer()" class=" btn btn-primary"
+            [disabled]="!customerForm.valid">Submit</button>
+        </div>
+      </div>
+    </form>
+  </ng-template>
+
+</div>

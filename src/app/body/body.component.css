@@ -1,0 +1,56 @@
+.body-main {
+  /* width: calc(100% - 5rem);
+  height: 100vh;
+  margin-left: 5rem;
+  z-index: 0;
+  position: relative;
+  top: 0;
+  transition: all .5s ease;
+  background: #f4f7fa;
+  padding: 0.4rem 1.5rem;
+  overflow-y: auto;
+  overflow-x: hidden; */
+
+  width: calc(100% - 5rem);
+  height: 100vh;
+  margin-left: 5rem;
+  z-index: 0;
+  position: relative;
+  top: 0px;
+  transition: all .5s ease;
+  background: #f4f7fa;
+  padding: 0.4rem 1.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 100px;
+}
+
+
+.body-main::-webkit-scrollbar {
+  width: 12px;
+  display: none;
+  /* width of the entire scrollbar */
+}
+
+/* .body-main::-webkit-scrollbar-track {
+  background: orange;
+} */
+
+/* .body-main::-webkit-scrollbar-thumb { */
+/* background-color: blue; */
+/* color of the scroll thumb */
+/* border-radius: 20px; */
+/* roundness of the scroll thumb */
+/* border: 3px solid orange; */
+/* creates padding around scroll thumb */
+/* } */
+
+.body-trimmed {
+  width: calc(100% - 16.5625rem);
+  margin-left: 16.5625rem;
+}
+
+.body-md-screen {
+  width: calc(100% - 5rem);
+  margin-left: 5rem;
+}

@@ -1,0 +1,43 @@
+<div class="containerWrapper">
+  <div class="contentWrapper">
+    <div class="logo">
+      <img src="../../assets/logos/Membora-logo.png" height="100px" width="100px " />
+    </div>
+    <div class="adminTitleWrapper">
+      <p class="wel-admin">Welcome back &nbsp;<span class="admin-text">ADMIN...</span></p>
+    </div>
+    <form [formGroup]="loginForm">
+      <div class="col-row">
+        <div class="col-md-12">
+          <label for="emailId" class="lbl-email">Email Address</label>
+          <input type="text" class="form-control" name="emailId" placeholder="Enter email id" formControlName="emailId"
+            tabindex="1" autofocus />
+        </div>
+        <br>
+        <div class="col-md-12">
+          <label for="password" class="lbl-pass">Password</label>
+          <input type="password" class="form-control" name="password" placeholder="Enter password"
+            formControlName="password" tabindex="2" />
+        </div>
+      </div>
+      <button class="btn-style" (click)="login()" tabindex="3">Login</button>
+      <p class="forgot-pass"><a href="/" tabindex="4">Forgot password?</a></p>
+    </form>
+  </div>
+
+  <div class="picWrapper">
+    <div class="titleWrapper">
+      <div class="mem-logo">
+        <img src="../../assets/logos/mem-logo-black.png" height="100px" width="100px" />
+      </div>
+      <p class="membora-title">Membora</p>
+      <p class="membora-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="picContent">
+    </div>
+  </div>
+</div>

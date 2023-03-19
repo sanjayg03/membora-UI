@@ -1,0 +1,163 @@
+/* HEADER */
+.header {
+  /* width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0px solid black;
+  background-image: linear-gradient(to right top, #1c77b2, #0091c1, #00abcb, #00bcca, #00cbc1);
+  color: #fff;
+  font-family: math;
+  position: fixed; */
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0px solid black;
+  /* background-image: linear-gradient(to right top, #1c77b2, #0091c1, #00abcb, #00bcca, #00cbc1); */
+  color: #fff;
+  font-family: math;
+  background-color: #0091c1;
+  /* position: fixed; */
+  /* padding: 0px 78px; */
+  /* width: calc(100% - 5rem);
+  margin-left: 5rem; */
+}
+
+.header-sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+
+.mem-logo {
+  width: 80%;
+}
+
+.memWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.mem-logo-style {
+  width: 100px;
+  height: 100px;
+  padding: 0 10px;
+  border-radius: 100%;
+  padding: 20px;
+  margin: 0px -10px;
+
+}
+
+.mem-title {
+  width: 50%;
+  margin-top: 34px;
+  font-size: 20px;
+}
+
+.admin {
+  width: 18%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 23px;
+  margin-left: 80px;
+
+}
+
+.admin-name {
+  width: 50%;
+  padding: 15px 12px;
+}
+
+.admin-logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  padding: 25px;
+  margin-top: -24px;
+}
+
+.admin-pf {
+  width: 0%;
+
+}
+
+/* popover p tag css */
+.popContent-P1 {
+  font-size: 16px;
+  font-family: math;
+  font-weight: 500;
+}
+
+.p1-hover {
+  border-radius: 5px;
+  padding: 6px 10px;
+  height: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.p2-hover {
+  border-radius: 5px;
+  padding: 6px 10px;
+  height: 35px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.p3-hover {
+  border-radius: 5px;
+  padding: 6px 10px;
+  height: 35px;
+  cursor: pointer;
+  margin: -9px 0px;
+}
+
+.p1-hover:hover {
+  color: #fff;
+  background-color: #00bcca;
+}
+
+.p2-hover:hover {
+  color: #fff;
+  background-color: #00bcca;
+}
+
+.p3-hover:hover {
+  color: #fff;
+  background-color: #00bcca;
+}
+
+.popContent-P2 {
+  font-size: 16px;
+  font-family: math;
+  font-weight: 500;
+}
+
+.popContent-P3 {
+  font-size: 16px;
+  font-family: math;
+  font-weight: 500;
+  /* margin-top: -5px; */
+}
+
+.mt-4 {
+  margin-top: -4px !important;
+}
+
+/* css for icons */
+
+/* user icon */
+
+.user-flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.user-style {
+  margin-top: 6px;
+  margin-right: 12px;
+}
