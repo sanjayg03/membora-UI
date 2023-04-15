@@ -12,4 +12,11 @@ export class TransactionsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addTrans() {
+    alert("Add Transaction is working fine...")
+  }
+
+  addEntry() {
+    alert("Add Entry is working fine...")
+  }
 }

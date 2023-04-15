@@ -1,0 +1,174 @@
+.transactionWrapper {
+  padding: 25px 0px;
+  width: 100%;
+}
+
+.row-1wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 35px;
+}
+
+.paidWrapper {
+  border: 1px solid coral;
+  width: 30%;
+  margin: 0 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px coral;
+}
+
+.pendingWrapper {
+  margin: 0px 50px;
+  border: 1px solid darkmagenta;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 10px 10px darkmagenta;
+}
+
+.addTrans {
+  margin: 0px 50px;
+  width: 40%;
+  border: 1px solid royalblue;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px royalblue;
+}
+
+.row-2wrapper {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.table-view {
+  width: 70%;
+  margin: 0 20px;
+}
+
+.recent-activity {
+  width: 30%;
+  border: 1px solid deeppink;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 10px 10px deeppink;
+}
+
+.paidContent {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.paid-name {
+  text-align: left;
+  padding: 20px 25px;
+  margin-top: -10px;
+  margin-bottom: -25px;
+}
+
+.paid-time {
+  float: right;
+}
+
+.pendingContent {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.pending-name {
+  text-align: left;
+  padding: 20px 25px;
+  margin-top: -10px;
+  margin-bottom: -25px;
+}
+
+.title-addTrans {
+  text-align: center;
+  font-size: 22px;
+}
+
+.plus-sym {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.plus-btn {
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px solid royalblue;
+  width: 75px;
+  font-size: 28px;
+  color: royalblue;
+  transition: 0.75s;
+}
+
+.plus-btn:hover {
+  color: white;
+  background-color: royalblue;
+}
+
+.paid-cus-title {
+  margin-bottom: 25px;
+  width: 90%;
+}
+
+.rec-act-body {
+  border-bottom: 1px solid deeppink;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+
+/* for tick icon */
+.tick-icon {
+  font-size: 20px;
+  color: green;
+  margin-left: 6px;
+}
+
+.pending-icon {
+  font-size: 20px;
+  margin-left: 6px;
+  color: firebrick;
+}
+
+/* p tag for trans icon */
+
+.trans-icon-p {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: -7px;
+}
+
+.trans-icon {
+  font-size: 32px;
+  color: #f4cf0c;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+/* add entry btn */
+
+.add-entry-btn {
+  height: 40px;
+  width: 100px;
+  background-color: transparent;
+  color: black;
+  border-radius: 6px;
+  border: 1px solid darkslategrey;
+  font-size: 14px;
+  padding-top: 3px;
+  margin-top: -8px;
+  transition: 0.60s;
+}
+
+.add-entry-btn:hover {
+  background-color: darkslategrey;
+  color: #fff;
+  border-radius: 6px;
+}

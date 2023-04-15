@@ -31,7 +31,6 @@
         <th>Phone No</th>
         <th>Date of Birth</th>
         <th>Subscription Date</th>
-        <!-- <th>Reminder</th> -->
       </tr>
       <tr *ngFor="let cus of customerData; let i = index">
         <td>{{i +1}}</td>
@@ -40,9 +39,6 @@
         <td>{{cus.phoneNumber}}</td>
         <td>{{cus.dateOfBirth | date: 'dd-MM-YYYY'}}</td>
         <td>{{cus.joiningDate | date: 'dd-MM-YYYY'}}</td>
-        <!-- <td><input type="radio" value="on" name="remider" id="on" /> ON <br>
-        <input type="radio" value="off" name="remider" id="off" /> OFF
-      </td> -->
       </tr>
 
     </table>
@@ -96,17 +92,6 @@
                 formControlName="joiningDate" />
             </div>
           </div>
-
-          <!-- <div class="row">
-            <div class="col-md-12">
-          <input type="checkbox" value="on" name="reminder" id="on" /> ON
-
-          <br>
-          <input type="checkbox" value="off" name=reminder id="off" /> OFF
-        </div>
-      </div> -->
-
-          <!-- <br><br> -->
 
         </div>
         <div class="modal-footer">

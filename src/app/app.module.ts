@@ -18,6 +18,7 @@ import { LoginComponent } from './security/login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AdminProfileComponent } from './components/admin-profile/admin-profile.component';
 
 
 
@@ -32,7 +33,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     TransactionsComponent,
     SettingsComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    AdminProfileComponent
   ],
   imports: [
     BrowserModule,

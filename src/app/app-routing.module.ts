@@ -7,6 +7,7 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { TermsConditionsComponent } from './components/terms-conditions/terms-conditions.component';
 import { LoginComponent } from './security/login/login.component';
 import { AuthGuard } from './services/auth.guard';
+import { AdminProfileComponent } from './components/admin-profile/admin-profile.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,9 @@ const routes: Routes = [
   },
   {
     path: 'terms-conditions', component: TermsConditionsComponent, canActivate: [AuthGuard]
+  },
+  {
+    path: 'admin-profile', component: AdminProfileComponent, canActivate: [AuthGuard]
   }
 ];
 

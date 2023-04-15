@@ -23,5 +23,10 @@ export const navbarData = [
     routeLink: 'settings',
     icon: 'fal fa-cog',
     label: 'Settings'
+  },
+  {
+    routeLink: 'admin-profile',
+    icon: 'fal fa-user',
+    label: 'My Profile'
   }
 ];

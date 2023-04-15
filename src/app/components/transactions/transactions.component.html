@@ -1,1 +1,122 @@
-<p>transactions works!</p>
+<div class="transactionWrapper">
+  <div class="row-1wrapper">
+    <div class="paidWrapper">
+      <p class="paidContent">PAID - 03 <span class="material-symbols-outlined tick-icon"> task_alt</span>
+      </p>
+      <hr>
+      <p class="paid-name">Sanjay G
+        <span class="paid-time">07.00 AM</span>
+      </p>
+      <p class="paid-name">Dinesh K
+        <span class="paid-time">09.00 AM</span>
+      </p>
+      <p class="paid-name">Ayesha S
+        <span class="paid-time">12.00 AM</span>
+      </p>
+      <br>
+    </div>
+    <div class="pendingWrapper">
+      <p class="pendingContent">PENDING - 03 <span class="material-symbols-outlined pending-icon">
+          pending_actions
+        </span> </p>
+      <hr>
+      <p class="pending-name">Priya G
+        <span class="paid-time">01.00 PM</span>
+      </p>
+      <p class="pending-name">Emarson S
+        <span class="paid-time">02.00 PM</span>
+      </p>
+      <p class="pending-name">Jeeva B
+        <span class="paid-time">11.00 PM</span>
+      </p>
+    </div>
+    <div class="addTrans">
+      <p class="title-addTrans">Add Transaction</p>
+      <p class="trans-icon-p"><span class="material-symbols-outlined trans-icon ">
+          paid
+        </span></p>
+      <p class="plus-sym"><button class="btn btn-sm plus-btn" (click)="addTrans()">+</button></p>
+    </div>
+  </div>
+  <hr>
+
+  <div class="row-2wrapper">
+    <div class="table-view">
+      <div class="flex">
+        <h5 class="paid-cus-title">Paid Cutomer History</h5>
+        <button class="add-entry-btn" (click)="addEntry()">Add entry + </button>
+      </div>
+      <table>
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Email Address</th>
+          <th>Phone No</th>
+          <th>Date of Birth</th>
+          <th>Subscription Date</th>
+        </tr>
+        <tr>
+          <td>01</td>
+          <td> Test</td>
+          <td> Test@gmail.com</td>
+          <td>9360158201</td>
+          <td>07-03-2001</td>
+          <td>01-04-2020</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td> Test</td>
+          <td> Test@gmail.com</td>
+          <td>9360158201</td>
+          <td>07-03-2001</td>
+          <td>01-04-2020</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td> Test</td>
+          <td> Test@gmail.com</td>
+          <td>9360158201</td>
+          <td>07-03-2001</td>
+          <td>01-04-2020</td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td> Test</td>
+          <td> Test@gmail.com</td>
+          <td>9360158201</td>
+          <td>07-03-2001</td>
+          <td>01-04-2020</td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td> Test</td>
+          <td> Test@gmail.com</td>
+          <td>9360158201</td>
+          <td>07-03-2001</td>
+          <td>01-04-2020</td>
+        </tr>
+
+      </table>
+    </div>
+
+    <div class="recent-activity">
+      <h5>Recent Activity</h5>
+      <hr>
+      <div class="rec-act-body">
+        <p>Sanjay G has paid at 01.00 am.</p>
+      </div>
+
+      <div class="rec-act-body">
+        <p>Hema K has paid at 02.00 am.</p>
+      </div>
+
+      <div class="rec-act-body">
+        <p>Emarson S has paid at 03.00 am.</p>
+      </div>
+      <div class="rec-act-body">
+        <p>Magesh G has paid at 04.00 am.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
